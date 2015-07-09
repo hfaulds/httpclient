@@ -194,7 +194,6 @@ class WebAgent
     alias original_domain domain
 
     def domain
-      warn('Cookie#domain returns dot-less domain name now. Use Cookie#dot_domain if you need "." at the beginning.')
       self.original_domain
     end
 
